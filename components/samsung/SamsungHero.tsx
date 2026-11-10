@@ -1,11 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import SamsungHeroVideo from "./SamsungHeroVideo";
 
 export default function SamsungHero() {
-  const [isPlaying, setIsPlaying] = useState(true);
-
   return (
     <section 
       id="hero"
@@ -16,41 +14,14 @@ export default function SamsungHero() {
         {/* Asymmetric Desktop Layout / Clean Responsive Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
           
-          {/* Left Column: Phone Trio Image (Asset 3: Elegant Foldable Phone Trio) */}
+          {/* Left Column: Cinematic Video (Google Flow 9:16 Phones Rising Animation) */}
           <motion.div
-            initial={{ opacity: 0, y: 35, scale: 0.98 }}
+            initial={{ opacity: 0, y: 30, scale: 0.99 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-6 xl:col-span-6 relative flex justify-center lg:justify-end items-end order-2 lg:order-1"
+            className="lg:col-span-6 xl:col-span-6 relative flex justify-center lg:justify-end items-center order-2 lg:order-1"
           >
-            <div className="relative w-full max-w-[540px] sm:max-w-[620px] lg:max-w-[720px] xl:max-w-[780px]">
-              {/* Product Hero Image */}
-              <img
-                src="/samsung-phone-hero.png"
-                alt="Galaxy Z Fold8 Ultra, Fold8, and Flip8 foldable phone trio"
-                className="w-full h-auto object-contain max-h-[65vh] sm:max-h-[72vh] lg:max-h-[82vh] select-none pointer-events-none drop-shadow-sm"
-                loading="eager"
-                draggable={false}
-              />
-
-              {/* Interactive Pause/Play Button from Reference (bottom-left) */}
-              <button
-                type="button"
-                onClick={() => setIsPlaying(!isPlaying)}
-                aria-label={isPlaying ? "Pause visual presentation" : "Play visual presentation"}
-                className="absolute bottom-2 left-6 sm:left-10 w-6 h-6 rounded-full border border-black/40 flex items-center justify-center text-black/70 hover:text-black hover:border-black transition-colors focus:outline-none focus:ring-1 focus:ring-black"
-                title={isPlaying ? "Pause" : "Play"}
-              >
-                {isPlaying ? (
-                  <span className="flex gap-[2px] items-center justify-center">
-                    <span className="w-[1.5px] h-2.5 bg-current rounded-full" />
-                    <span className="w-[1.5px] h-2.5 bg-current rounded-full" />
-                  </span>
-                ) : (
-                  <span className="w-0 h-0 border-y-[4px] border-y-transparent border-l-[6px] border-l-current ml-0.5" />
-                )}
-              </button>
-            </div>
+            <SamsungHeroVideo poster="/samsung-phone-hero.png" />
           </motion.div>
 
           {/* Right Column: Hero Typography & CTA Buttons */}
