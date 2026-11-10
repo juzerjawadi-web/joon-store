@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SamsungHeader from "../../components/samsung/SamsungHeader";
 import SamsungHero from "../../components/samsung/SamsungHero";
+import SamsungRecommendedProducts from "../../components/samsung/SamsungRecommendedProducts";
 import SamsungHighlights from "../../components/samsung/SamsungHighlights";
 import SamsungModelComparison from "../../components/samsung/SamsungModelComparison";
 import SamsungFloatingBar from "../../components/samsung/SamsungFloatingBar";
@@ -16,6 +17,7 @@ export default function SamsungPage() {
     <main className="min-h-screen bg-white text-black font-sans selection:bg-[#2189ff]/20 overflow-x-hidden">
       <SamsungHeader />
       <SamsungHero />
+      <SamsungRecommendedProducts />
       <SamsungHighlights />
       <SamsungModelComparison />
       <SamsungFloatingBar />
