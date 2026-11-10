@@ -9,7 +9,7 @@
 
 <br />
 
-### 🌐 [Visit Live Apple Store](https://antigravity-store-two.vercel.app) &nbsp;•&nbsp; 📱 [Visit Live Samsung Store](https://antigravity-store-two.vercel.app/samsung)
+### 🌐 [Visit Live Apple Store](https://antigravity-store-two.vercel.app) &nbsp;•&nbsp; 📱 [Visit Live Samsung Store](https://antigravity-store-two.vercel.app/samsung) &nbsp;•&nbsp; 📲 [Galaxy Z Fold8 Product Page](https://antigravity-store-two.vercel.app/samsung/galaxy-z-fold8)
 
 <br />
 
@@ -30,7 +30,8 @@
 | Brand Experience | URL | Highlights |
 |---|---|---|
 | **Apple iPhone 18 Pro** | [https://antigravity-store-two.vercel.app](https://antigravity-store-two.vercel.app) | Dark mode aesthetics, A20 Pro chip, Vapor Chamber, Interactive f/ aperture camera selector, Apple Intelligence. |
-| **Samsung Galaxy Z Fold8 & Flip8** | [https://antigravity-store-two.vercel.app/samsung](https://antigravity-store-two.vercel.app/samsung) | Pure-white minimalist design, Google Flow cinematic hero video with autoplay & 5s hold replay, "Recommended for you" product carousel, Galaxy AI. |
+| **Samsung Galaxy Store** | [https://antigravity-store-two.vercel.app/samsung](https://antigravity-store-two.vercel.app/samsung) | Pure-white minimalist design, Google Flow cinematic hero video with autoplay & 5s hold replay, "Recommended for you" product carousel, Galaxy AI. |
+| **Samsung Galaxy Z Fold8** | [https://antigravity-store-two.vercel.app/samsung/galaxy-z-fold8](https://antigravity-store-two.vercel.app/samsung/galaxy-z-fold8) | Official product page featuring lavender Fold8 artwork, blurred FOLD typography, Galaxy AI, Dynamic AMOLED 2X, and full technical specifications. |
 
 ---
 
