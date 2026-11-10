@@ -1,118 +1,71 @@
 <div align="center">
 
-# 📱 Antigravity Store - iPhone 18 Pro Experience
+# 💎 JOON STORES Dub-Ind
+### Apple × Samsung Dual Flagship E-Commerce Experience
 
-<a href="https://antigravity-store-ten.vercel.app">
-  <img src="public/siri-ai-hero-trans.webp" alt="iPhone 18 Pro Siri Intelligence" width="800" style="max-width: 100%; drop-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5); margin: 20px 0; border-radius: 12px;"/>
-</a>
-
-*A breathtaking, high-performance eCommerce landing page inspired by Apple's premium design language. Completely lag-free, hyper-optimized, and built for the future.*
-
-<br />
-
-<!-- Dynamic GitHub Badges (Will populate once pushed to GitHub) -->
-[![GitHub Repo stars](https://img.shields.io/github/stars/juzer09jawadwala-source/antigravity-store?style=for-the-badge&color=yellow)](https://github.com/juzer09jawadwala-source/antigravity-store/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/juzer09jawadwala-source/antigravity-store?style=for-the-badge&color=white)](https://github.com/juzer09jawadwala-source/antigravity-store/network/members)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/juzer09jawadwala-source/antigravity-store?style=for-the-badge&color=orange)](https://github.com/juzer09jawadwala-source/antigravity-store/pulls)
-[![GitHub issues](https://img.shields.io/github/issues/juzer09jawadwala-source/antigravity-store?style=for-the-badge&color=red)](https://github.com/juzer09jawadwala-source/antigravity-store/issues)
-[![GitHub license](https://img.shields.io/github/license/juzer09jawadwala-source/antigravity-store?style=for-the-badge&color=brightgreen)](https://github.com/juzer09jawadwala-source/antigravity-store/blob/main/LICENSE)
-[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://antigravity-store-ten.vercel.app)
-
-<!-- Tech Stack Badges -->
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](#)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](#)
+[![Live Demo](https://img.shields.io/badge/Live_Website-antigravity--store--two.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://antigravity-store-two.vercel.app)
+[![Samsung Store](https://img.shields.io/badge/Samsung_Store-Galaxy_Z_Fold8-000f8d?style=for-the-badge&logo=samsung&logoColor=white)](https://antigravity-store-two.vercel.app/samsung)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp_Concierge-+91_91678_68179-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/919167868179)
 
 <br />
 
-### 🔗 [View Live Demo](https://antigravity-store-ten.vercel.app)
+### 🌐 [Visit Live Apple Store](https://antigravity-store-two.vercel.app) &nbsp;•&nbsp; 📱 [Visit Live Samsung Store](https://antigravity-store-two.vercel.app/samsung)
+
+<br />
+
+<img src="public/samsung-reference.jpg" alt="JOON Stores Samsung Experience" width="900" style="max-width: 100%; border-radius: 14px; box-shadow: 0 20px 40px -15px rgba(0,0,0,0.3); margin: 16px 0;" />
 
 </div>
 
 ---
 
-## ✨ Features
+## 🌟 Overview
 
-- **Apple-Grade Visuals:** Meticulously crafted layouts mirroring the premium, dark-mode-first design language of modern tech giants.
-- **Lightning Fast Performance:** A 55MB+ asset payload completely optimized and converted to lightweight `WebP`, delivering a visually stunning site with zero scroll lag.
-- **Seamless Integrations:**
-  - Siri / Apple Intelligence Hero showcase with flawless alpha-masking.
-  - Vapor Chamber graphics with AI-assisted background removal and CSS radial blending.
-  - Edge-to-edge full-width product imagery.
-- **Fluid Animations:** Component-level scroll triggers, parallax carousels, and smooth reveals using Framer Motion and Tailwind.
-- **Mobile First:** Responsive grids and text scaling ensuring the "pro" experience translates perfectly to any screen size.
-
-## 🛠 Tech Stack
-
-- **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Deployment:** [Vercel](https://vercel.com/)
-- **Image Optimization:** Python (Pillow, rembg) for Next-Gen `WebP` compression
-
-## 🚀 Getting Started
-
-To run this project locally, follow these steps:
-
-### Prerequisites
-
-- Node.js 18.17 or later
-- npm, yarn, or pnpm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/juzer09jawadwala-source/antigravity-store.git
-   cd antigravity-store
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📂 Project Structure
-
-```text
-antigravity-store/
-├── app/                  # Next.js App Router and main pages
-├── components/           # Reusable UI components
-│   ├── sections/         # Major page sections (Hero, SiriAi, VaporChamber, etc.)
-│   └── ui/               # Granular interactive components (Carousels, Cards)
-├── public/               # Highly optimized WebP assets
-└── styles/               # Global CSS and Tailwind configurations
-```
-
-## 📈 Performance Journey
-
-During development, the site underwent a massive performance audit. Over 50MB of heavy uncompressed product images (PNG/JPG) were batch-converted to `WebP` and wrapped in `next/image` attributes and native lazy loading. 
-
-Additionally, custom AI scripts (`rembg`) were used to isolate product graphics (like the Siri orb and internal Vapor Chamber) to allow seamless `#000000` blending via CSS `mask-image`, removing ugly clipping boxes entirely.
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-Feel free to check [issues page](https://github.com/juzer09jawadwala-source/antigravity-store/issues). 
-
-## 📝 License
-
-This project is [MIT](LICENSE) licensed.
+**JOON STORES Dub-Ind** is an ultra-premium dual-brand digital commerce platform bringing factory-sealed Apple and Samsung flagship devices from Dubai directly to customers across India with worldwide official warranty and dedicated WhatsApp concierge support.
 
 ---
+
+## 🚀 Live Experiences
+
+| Brand Experience | URL | Highlights |
+|---|---|---|
+| **Apple iPhone 18 Pro** | [https://antigravity-store-two.vercel.app](https://antigravity-store-two.vercel.app) | Dark mode aesthetics, A20 Pro chip, Vapor Chamber, Interactive f/ aperture camera selector, Apple Intelligence. |
+| **Samsung Galaxy Z Fold8 & Flip8** | [https://antigravity-store-two.vercel.app/samsung](https://antigravity-store-two.vercel.app/samsung) | Pure-white minimalist design, Google Flow cinematic hero video with autoplay & 5s hold replay, "Recommended for you" product carousel, Galaxy AI. |
+
+---
+
+## ✨ Flagship Highlights
+
+### 🍏 Apple Store Experience
+- **Interactive Pro Camera System:** State-driven variable aperture widget (`f/1.48` to `f/4.0`) that dynamically swaps imagery and specifications.
+- **Vapor Chamber & A20 Pro Chip:** High-performance hardware presentation with custom alpha masks.
+- **Apple Intelligence Shopping Assistant:** Siri-inspired interactive AI genius concierge with floating launcher.
+- **Mixed-Ratio Product Carousel:** Tailored wide and narrow cards mirroring Apple's typography.
+
+### 📱 Samsung Store Experience
+- **Cinematic Hero Video:** Google Flow 9:16 rising foldable phones with automated 5-second final-frame freeze and replay cycle.
+- **"Recommended for you" Carousel:** Single-track horizontal product slider with interactive progress indicator line, circular arrow controls, and 6 official device models (S26, S26 FE, S26+, S26 Ultra with S Pen, Z Fold8 Ultra, Tab S10 Lite).
+- **Galaxy AI Concierge:** Samsung-themed AI assistant tailored with Galaxy ecosystem expertise.
+- **One-Tap WhatsApp Concierge:** Instant pre-configured WhatsApp ordering with direct Dubai-to-India fulfillment.
+
+---
+
+## 🔒 Proprietary Codebase Notice
+
+> [!IMPORTANT]
+> The source code of this production website is proprietary and maintained in a private repository for commercial security. Live website access is publicly available via the links above.
+
+---
+
+## 📞 Direct Concierge & Support
+
+- **Store:** JOON STORES Dub-Ind
+- **WhatsApp Concierge:** [+91 91678 68179](https://wa.me/919167868179)
+- **Email:** [juzer09jawadwala@gmail.com](mailto:juzer09jawadwala@gmail.com)
+- **Warranty:** 100% Genuine Sealed Units • Worldwide Manufacturer Warranty
+
+<br />
+
 <div align="center">
-  <sub>Built with ❤️ by the Antigravity Team.</sub>
+<sub>© 2026 JOON STORES Dub-Ind. All rights reserved. Apple, iPhone, Samsung, and Galaxy are trademarks of their respective owners.</sub>
 </div>
