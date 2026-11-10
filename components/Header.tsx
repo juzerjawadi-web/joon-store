@@ -32,10 +32,32 @@ export default function Header() {
       <header className="fixed top-0 w-full z-50 bg-[rgba(0,0,0,0.8)] backdrop-blur-md">
         <div className="max-w-[1024px] mx-auto h-[44px] flex items-center justify-between px-4">
           
-          {/* Apple Logo */}
-          <Link href="/" className="text-[#f5f5f7]/80 hover:text-white transition-colors duration-300 flex items-center justify-center z-[60]">
-            <AppleLogo />
-          </Link>
+          {/* Brand Selector: Apple & Samsung */}
+          <div className="flex items-center gap-3 z-[60]">
+            <Link 
+              href="/" 
+              title="Apple Experience" 
+              aria-label="Apple Experience (Active)"
+              className="text-white flex items-center justify-center p-0.5 transition-transform hover:scale-105 focus:outline-none focus:ring-1 focus:ring-white/40 rounded"
+            >
+              <AppleLogo />
+            </Link>
+
+            <span className="w-[1px] h-3.5 bg-white/25" aria-hidden="true" />
+
+            <Link 
+              href="/samsung" 
+              title="Switch to Samsung Experience" 
+              aria-label="Switch to Samsung Experience"
+              className="opacity-75 hover:opacity-100 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center p-0.5 rounded focus:outline-none focus:ring-1 focus:ring-blue-400"
+            >
+              <img 
+                src="/samsung-blue-ellipse-logo.png" 
+                alt="Samsung" 
+                className="h-[13px] w-auto object-contain drop-shadow-sm" 
+              />
+            </Link>
+          </div>
 
           {/* Links (Desktop) */}
           {navItems.map((item) => (
@@ -87,9 +109,32 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-black pt-16 px-6 md:hidden"
+            className="fixed inset-0 z-40 bg-black pt-16 px-6 md:hidden overflow-y-auto"
           >
-            <div className="flex flex-col gap-6 mt-4">
+            {/* Mobile Brand Switcher */}
+            <div className="flex items-center justify-between py-3 mb-6 border-b border-white/10">
+              <span className="text-xs uppercase tracking-wider text-white/50 font-medium">Select Brand</span>
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 text-white text-xs font-medium border border-white/20"
+                >
+                  <AppleLogo />
+                  <span>Apple</span>
+                </Link>
+                <Link
+                  href="/samsung"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white text-xs font-medium transition-colors"
+                >
+                  <img src="/samsung-blue-ellipse-logo.png" alt="Samsung" className="h-3 w-auto object-contain" />
+                  <span>Samsung</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-6 mt-2">
               {navItems.map((item) => (
                 <Link
                   key={item}

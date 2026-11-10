@@ -2,8 +2,12 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function SiriAssistant() {
+  const pathname = usePathname();
+  const isSamsung = pathname?.startsWith("/samsung");
+
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{id: string, role: string, content: string}[]>([]);
   const [input, setInput] = useState("");
@@ -74,15 +78,32 @@ export default function SiriAssistant() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-6 right-6 z-50 p-[2px] rounded-full overflow-hidden shadow-2xl shadow-purple-500/20 group"
+            className={`fixed bottom-6 right-6 z-50 p-[2px] rounded-full overflow-hidden shadow-2xl group ${
+              isSamsung ? "shadow-blue-500/25" : "shadow-purple-500/20"
+            }`}
           >
-            {/* Animated Siri-like Gradient Border */}
-            <span className="absolute inset-0 bg-gradient-to-r from-[#ff00ff] via-[#00d4ff] to-[#ff00ff] animate-spin-slow" style={{ animationDuration: '4s' }} />
+            {/* Animated Brand Gradient Border */}
+            <span
+              className={`absolute inset-0 animate-spin-slow ${
+                isSamsung
+                  ? "bg-gradient-to-r from-[#2189ff] via-[#00d4ff] to-[#000f8d]"
+                  : "bg-gradient-to-r from-[#ff00ff] via-[#00d4ff] to-[#ff00ff]"
+              }`}
+              style={{ animationDuration: '4s' }}
+            />
             
             <div className="relative bg-black hover:bg-black/80 transition-colors rounded-full px-6 py-4 flex items-center gap-3">
-              {/* Inner glowing orb */}
-              <div className="w-4 h-4 rounded-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 blur-[2px] animate-pulse" />
-              <span className="text-[#f5f5f7] font-medium tracking-tight">Ask Apple Intelligence</span>
+              {/* Inner glowing orb / star */}
+              <div
+                className={`w-4 h-4 rounded-full blur-[2px] animate-pulse ${
+                  isSamsung
+                    ? "bg-gradient-to-r from-[#2189ff] via-[#00d4ff] to-[#000f8d]"
+                    : "bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+                }`}
+              />
+              <span className="text-[#f5f5f7] font-medium tracking-tight">
+                {isSamsung ? "Ask Galaxy AI" : "Ask Apple Intelligence"}
+              </span>
             </div>
           </motion.button>
         )}
@@ -101,8 +122,16 @@ export default function SiriAssistant() {
             {/* Header */}
             <div className="px-6 py-4 border-b border-white/10 flex justify-between items-center bg-black/40">
               <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 blur-[2px] animate-pulse" />
-                <h3 className="text-[#f5f5f7] font-semibold text-lg">Apple Intelligence</h3>
+                <div
+                  className={`w-5 h-5 rounded-full blur-[2px] animate-pulse ${
+                    isSamsung
+                      ? "bg-gradient-to-r from-[#2189ff] via-[#00d4ff] to-[#000f8d]"
+                      : "bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+                  }`}
+                />
+                <h3 className="text-[#f5f5f7] font-semibold text-lg">
+                  {isSamsung ? "Galaxy AI Concierge" : "Apple Intelligence"}
+                </h3>
               </div>
               <button 
                 onClick={() => setIsOpen(false)}
@@ -119,9 +148,19 @@ export default function SiriAssistant() {
             <div className="flex-1 overflow-y-auto p-6 space-y-6 scrollbar-thin scrollbar-thumb-white/10">
               {messages.length === 0 && (
                 <div className="flex flex-col items-center justify-center h-full text-center opacity-60">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 blur-xl opacity-50 mb-4 animate-pulse" />
+                  <div
+                    className={`w-16 h-16 rounded-full blur-xl opacity-50 mb-4 animate-pulse ${
+                      isSamsung
+                        ? "bg-gradient-to-r from-[#2189ff] via-[#00d4ff] to-[#000f8d]"
+                        : "bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+                    }`}
+                  />
                   <p className="text-[#f5f5f7] text-lg font-medium">How can I help you today?</p>
-                  <p className="text-[#86868b] text-sm mt-2">Ask about the A20 Pro chip, cameras, or colors.</p>
+                  <p className="text-[#86868b] text-sm mt-2">
+                    {isSamsung
+                      ? "Ask about Galaxy Z Fold8 Ultra, Flip8, Flex Hinge, or AI."
+                      : "Ask about the A20 Pro chip, cameras, or colors."}
+                  </p>
                 </div>
               )}
               
@@ -163,7 +202,11 @@ export default function SiriAssistant() {
                 <input
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder="Ask about iPhone 18 Pro..."
+                  placeholder={
+                    isSamsung
+                      ? "Ask about Galaxy Z Fold8, Flip8, AI features..."
+                      : "Ask about iPhone 18 Pro..."
+                  }
                   className="w-full bg-white/5 border border-white/10 rounded-full pl-6 pr-12 py-4 text-[#f5f5f7] placeholder:text-[#86868b] focus:outline-none focus:border-white/30 focus:ring-1 focus:ring-white/30 transition-all"
                 />
                 <button 
